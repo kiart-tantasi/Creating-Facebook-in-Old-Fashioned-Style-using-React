@@ -3,12 +3,12 @@ import React from "react";
 export default function Nav() {
   return (
     <div className="nav">
-      <a href="#" className="bookface-logo">
+      <a href="/" className="bookface-logo">
         BOOKFACE
       </a>
       <ul>
         <li>
-          <a href="#">Home</a>
+          <a href="/">Home</a>
         </li>
         {/* <li>
           <a href="#">Friends</a>
