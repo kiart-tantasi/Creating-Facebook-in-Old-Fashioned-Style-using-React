@@ -1,0 +1,174 @@
+/* https://colorhunt.co/palette/161853292c6dfaedf0ec255a */
+/* 
+Dark Blue #161853
+Lighter Dark Blue #292C6D
+Cream #FAEDF0
+Light Red #EC255A
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  padding-bottom: 50px;
+}
+
+hr {
+  width: 100px;
+  margin: 100px auto;
+}
+
+/* NAV */
+
+.bookface-logo {
+  position: absolute;
+  left: 20px;
+  padding: 10px 0;
+  text-decoration: none;
+  color: #faedf0;
+  font-size: 1.2rem;
+}
+
+.nav {
+  min-width: 100vw;
+  position: relative;
+  background-color: #292c6d;
+  height: 40px;
+}
+
+.nav ul {
+  position: absolute;
+  right: 10px;
+  display: inline-block;
+  padding: 10px 0;
+  margin-right: 10px;
+}
+
+.nav li {
+  display: inline-block;
+}
+
+.nav li a {
+  padding: 8px;
+  border-radius: 5px;
+  color: #faedf0;
+  text-decoration: none;
+}
+
+.nav li a:hover {
+  background-color: #161853;
+}
+
+.nav li a:last-child {
+  margin-right: 10px;
+}
+
+/* New Post */
+
+.new-post {
+  position: relative;
+  margin: 30px auto 0 auto;
+  width: 500px;
+}
+
+.new-post input {
+  height: 100px;
+}
+
+.new-post button {
+  font-size: 1rem;
+  margin-top: 10px;
+}
+
+/* Posts */
+
+.posts {
+  margin: 0 auto;
+  width: 500px;
+  text-align: start;
+  margin-top: 50px;
+}
+
+.each-post {
+  background-color: #faedf0;
+  padding: 10px;
+  margin: 20px 0;
+  border-radius: 5px;
+}
+
+.each-post h1 {
+  font-weight: normal;
+}
+
+.bottom-post {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+}
+
+.bottom-post p {
+  cursor: pointer;
+  flex-grow: 1;
+  display: inline-block;
+  font-size: 0.8rem;
+  color: #ec255a;
+}
+
+.bottom-post h2 {
+  flex-grow: 1;
+  display: inline-block;
+  font-size: 0.9rem;
+  font-weight: normal;
+  text-align: end;
+}
+
+/* Friends */
+.friends {
+  border: 1px solid #292c6d;
+  border-radius: 3px;
+  text-align: start;
+  width: 300px;
+  padding: 10px;
+  margin: 50px auto;
+}
+
+.friends-heading {
+  color: #161853;
+}
+
+.friends h2 {
+  margin: 10px 0;
+}
+
+/* Requests */
+
+.requests {
+  margin: 0 auto;
+  width: 350px;
+}
+
+.each-request {
+  position: relative;
+  background-color: #faedf0;
+  margin: 10px 0;
+}
+
+.each-request h2 {
+  display: inline-block;
+}
+
+.request-buttons {
+  position: absolute;
+  right: 10px;
+  text-align: end;
+  margin-left: 20px;
+  display: inline-block;
+}
+
+.request-buttons button:first-child {
+  margin-right: 10px;
+}
