@@ -4,9 +4,10 @@ import Posts from "./Posts";
 import Friends from "./Friends";
 import Requests from "./Requests";
 import NewPost from "./NewPost";
+import Username from "./Username";
 
 const postsArr = [
-  { id: "1", post: "I AM SO HAPPY WITH THIS!", poster: "James Boro", likes: 15 },
+  { id: "1", post: "It just gave me a big smile!", poster: "James Boro", likes: 15 },
   {
     id: "2",
     post: "What happened last nighttt???",
@@ -33,16 +34,19 @@ const requestsArr = [
   { id: "2", requester: "Alexander Wanz" },
   { id: "3", requester: "Thomas Groon" }
 ];
+const defaultUsername = "BOOK FACE";
 
 export default function Main() {
   const [posts, setPosts] = useState(postsArr);
   const [friends, setFriends] = useState(friendsArr);
   const [requests, setRequests] = useState(requestsArr);
+  const [username, setUsername] = useState(defaultUsername)
 
   return (
-    <div>
+    <div className="main-div">
       <Nav />
-      <NewPost setPosts={setPosts} />
+      <Username username={username} setUsername={setUsername} />
+      <NewPost username={username} setPosts={setPosts} />
       <Posts posts={posts} />
       <hr />
       <Friends friends={friends} />

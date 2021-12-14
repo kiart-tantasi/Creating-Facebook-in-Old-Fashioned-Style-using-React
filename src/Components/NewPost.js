@@ -16,8 +16,8 @@ export default function NewPost(props) {
         {
           id: Math.random().toString(),
           post: inputText,
-          poster: "Kiart Tantasi",
-          likes: Math.ceil(Math.random() * 30)
+          poster: props.username,
+          likes: Math.ceil(Math.random() * 30),
         },
         ...prev
       ];
@@ -27,14 +27,10 @@ export default function NewPost(props) {
   return (
     <div className="new-post">
       <form onSubmit={post}>
-        <textarea
-          ref={textRef}
-          rows="5"
-          cols="50"
-          className="new-post"
-          type="text"
-        ></textarea>
-        <button type="submit">Post</button>
+        <div className="new-post-container">
+          <input type="text" ref={textRef} />
+          <button type="submit">Post</button>
+        </div>
       </form>
     </div>
   );
