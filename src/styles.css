@@ -99,13 +99,13 @@ hr {
 }
 
 .new-post-container {
-  width: 300px;
+  width: 400px;
   margin: 0 auto;
 }
 
 .new-post input {
   text-align: center;
-  height: 100px;
+  height: 80px;
   width: 100%;
   border-radius: 1px;
 }
